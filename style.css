@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    transition: 0.4s;
+}
+
+/* LOGIN */
+.login-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background: white;
+    padding: 30px;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background: #2a5298;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#message {
+    color: red;
+    margin-top: 10px;
+}
+
+/* DASHBOARD */
+.dashboard {
+    display: none;
+    height: 100vh;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: #1e3c72;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.sidebar button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 8px;
+    background: crimson;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Main */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar button {
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+/* Cards */
+.cards {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* College Message */
+.college-msg {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+/* DARK MODE */
+.dark body {
+    background: #121212;
+}
+
+.dark .main-content {
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark .card {
+    background: #2a2a2a;
+    color: white;
+}
